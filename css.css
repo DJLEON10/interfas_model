@@ -9,28 +9,31 @@ html,body{
     background-color: red;
     margin: 0 auto;
     max-width: 800px;
+    display: grid ;
+    grid-template-areas: 
+    "header header header header"
+    "menu content content content"
+    "footer footer footer footer "
+    ;
 
 }
 header{
     background-color: purple;
-    height: 60px;    
+    height: 60px;   
+    grid-area: header; 
 }
-section{
-    background-color: green;
-    overflow: hidden;
-    display: flex;
-   /* flex-direction: row-reverse;*/
-}
+
 nav{
     background-color: beige;
-    width: 25%;
+    grid-area: menu;
 }
 article{
     background-color: aquamarine;
-    width: 75%;
     height: 80px;
+    grid-area: content;
 }
 footer{
 background-color: pink;
 height: 120px;
+grid-area: footer;
 }

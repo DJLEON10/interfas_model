@@ -9,6 +9,7 @@ html,body{
     background-color: red;
     margin: 0 auto;
     max-width: 800px;
+
 }
 header{
     background-color: purple;
@@ -17,17 +18,16 @@ header{
 section{
     background-color: green;
     overflow: hidden;
-
+    display: flex;
+   /* flex-direction: row-reverse;*/
 }
 nav{
     background-color: beige;
     width: 25%;
-    float: left;
 }
 article{
     background-color: aquamarine;
     width: 75%;
-    float: left;
     height: 80px;
 }
 footer{
